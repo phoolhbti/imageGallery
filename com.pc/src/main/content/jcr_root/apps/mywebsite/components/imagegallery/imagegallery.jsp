@@ -43,7 +43,7 @@
                String nodeName=currentNode.getName();           
                String property[] = properties.get("./links",String[].class);
                StringBuffer result = new StringBuffer();               
-                for (int i = 0; i < property.length; i++) {
+                for (int i = 0; currentNode.hasProperty("./links")&&(i < property.length); i++) {
                    result.append( property[i] );
                    result.append(",");
                 }
