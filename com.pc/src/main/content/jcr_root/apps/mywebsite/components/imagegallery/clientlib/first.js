@@ -3,4 +3,5 @@
 */
 function getNameFirst() {
 // return the name
-return "some value";}
+return "some value";
+}
