@@ -1,15 +1,17 @@
 <%@include file="/libs/foundation/global.jsp"%>
-<%@page import="javax.jcr.Property"%>
-<%@page import="javax.jcr.Value"%>
-<%@page import="javax.jcr.nodetype.NodeType"%>
-<%@page import="javax.jcr.NodeIterator"%>
-<%@page import="javax.jcr.Node,org.apache.sling.api.resource.ResourceResolver,org.apache.sling.api.resource.Resource,org.apache.sling.api.resource.ValueMap"%>
-<%@page import="java.util.*"%>
-<%@page import="org.apache.sling.commons.json.JSONObject"%>
-<%@page import="org.apache.sling.commons.json.JSONArray"%>
+<%@page import="java.util.*,
+                javax.jcr.Node,
+                javax.jcr.NodeIterator,
+                javax.jcr.nodetype.NodeType,
+                javax.jcr.Property,
+                javax.jcr.Value,
+                org.apache.sling.api.resource.ResourceResolver,
+                org.apache.sling.api.resource.Resource,
+                org.apache.sling.commons.json.JSONObject,
+                org.apache.sling.commons.json.JSONArray,
+                org.apache.sling.api.resource.ValueMap"%>
+                
 <cq:includeClientLib categories="mywebsite.components" />
-
-        
         <script type="text/javascript">
             Cufon.replace('span,p,h1',{
                 textShadow: '0px 0px 1px #ffffff'
