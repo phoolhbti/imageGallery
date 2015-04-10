@@ -5,13 +5,11 @@
     <artifactId>com.pc</artifactId>
     <packaging>content-package</packaging>
     <version>1.0</version>
-    <name>test</name>
-
+    <name>imageGallery</name>
     <properties>
         <crx.host>localhost</crx.host>
         <crx.port>4502</crx.port>
     </properties>
-
     <build>
         <resources>
             <resource>
@@ -32,7 +30,6 @@
                     <includeEmptyDirs>true</includeEmptyDirs>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>com.day.jcr.vault</groupId>
                 <artifactId>content-package-maven-plugin</artifactId>
@@ -50,7 +47,6 @@
             </plugin>
         </plugins>
     </build>
-
     <profiles>
         <profile>
             <id>autoInstallPackage</id>
